@@ -11,7 +11,7 @@ install:
 
 clean:
 	rm -Rf *.egg-info
-	rm -Rf jinja2_getenv_extension/__pycache__
+	rm -Rf jinja2_shell_extension/__pycache__
 	rm -Rf tests/__pycache__
 	rm -Rf .pytest_cache
 

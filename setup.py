@@ -6,7 +6,7 @@ with open('requirements.txt') as reqs:
         if (line and not line.startswith('--')) and (";" not in line)]
 
 setup(
-    name="jinja2_getenv_extension",
+    name="jinja2_shell_extension",
     version="0.0.1",
     license="BSD",
     packages=find_packages(),
