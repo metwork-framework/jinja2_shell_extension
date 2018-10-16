@@ -1,0 +1,13 @@
+pipeline:
+  build:
+    image: python:${PYTHON_VERSION}
+    commands:
+      - python setup.py install
+      - pip install -r dev-requirements.txt
+      - make test
+
+matrix:
+  PYTHON_VERSION:
+    - 3.5-jessie
+
+branches: [ master, pci_*, ci_* ]
