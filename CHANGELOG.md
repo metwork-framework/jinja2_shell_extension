@@ -1,15 +1,9 @@
-<a name=""></a>
-# (unreleased)
+<a name="unreleased"></a>
+## [Unreleased]
 
+### Feat
+- first version
 
-### Bug Fixes
-
-* fix copy/paste issues ([d425868](https://github.com/metwork-framework/jinja2_shell_extension/commit/d425868))
-
-
-### Features
-
-* first version ([dc276cc](https://github.com/metwork-framework/jinja2_shell_extension/commit/dc276cc))
-
-
+### Fix
+- fix copy/paste issues
 
