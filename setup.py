@@ -12,7 +12,7 @@ setup(
     author="Fabien MARTY",
     author_email="fabien.marty@gmail.com",
     name="jinja2_shell_extension",
-    version="0.0.2",
+    version="0.0.3",
     license="BSD",
     packages=find_packages(),
     install_requires=install_requires,
