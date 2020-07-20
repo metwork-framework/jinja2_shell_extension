@@ -29,8 +29,8 @@ pull_request_rules:
       comment:
         message: |
           To (auto) merge this pull-request, just tag this PR with a label:
-          
-          - `Type: Enhancement` (new feature) 
+
+          - `Type: Enhancement` (new feature)
           - (or) `Type: Bug` (bugfix)
           - (or) `Type: Maintenance` (not on the changelog)
     conditions:
@@ -40,8 +40,8 @@ pull_request_rules:
       - "#approved-reviews-by>=1"
       - -title~=(WIP|wip)
       - "label!=Status: Blocked"
-      - -"label~=^Type: "
-     
+      - "-label~=^Type: "
+
   - name: buildbot auto merges
     actions:
       label:
