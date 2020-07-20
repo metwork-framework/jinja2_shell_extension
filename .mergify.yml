@@ -114,3 +114,15 @@ pull_request_rules:
       - conflict
       - "label!=Status: Blocked"
 
+  - name: closed
+    actions:
+      label:
+        remove: ["Status: Revision Needed", "Status: Pending", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
+    conditions:
+      - closed
+  - name: merged
+    actions:
+      label:
+        remove: ["Status: Revision Needed", "Status: Pending", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
+    conditions:
+      - merged
