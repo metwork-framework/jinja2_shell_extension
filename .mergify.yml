@@ -9,9 +9,6 @@ pull_request_rules:
         strict: true
         commit_message: title+body
       delete_head_branch: {}
-      label:
-        add: ["Status: Merged"]
-        remove: ["Status: Revision Needed", "Status: Pending", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
     conditions:
 
       - -merged
@@ -117,12 +114,15 @@ pull_request_rules:
   - name: closed
     actions:
       label:
-        remove: ["Status: Revision Needed", "Status: Pending", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
+        add: ["Status: Closed"]
+        remove: ["Status: Revision Needed", "Status: Pending", "Status: Merged", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
     conditions:
       - closed
+      - -merged
   - name: merged
     actions:
       label:
-        remove: ["Status: Revision Needed", "Status: Pending", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
+        add: ["Status: Merged"]
+        remove: ["Status: Revision Needed", "Status: Pending", "Status: Closed", "Status: Review Needed", "Status: Accepted", "Status: Blocked", "Status: In Progress", "Status: NotReproduced", "Status: Merge Now"]
     conditions:
       - merged
