@@ -34,7 +34,8 @@ from jinja2 import Template, Environment
 env = Environment(extensions=["jinja2_shell_extension.ShellExtension"])
 
 # For the example, we use a template from a simple string
-template = env.from_string("{{ 'date --rfc-2822'|shell() }}")
+template = env.from_string("Mon, 10 Oct 2022 13:43:04 +0000
+")
 result = template.render()
 
 # example: result == "Fri, 31 Jan 2020 13:35:56 +0100"
