@@ -5,14 +5,14 @@ with open('requirements.txt') as reqs:
         line for line in reqs.read().split('\n')
         if (line and not line.startswith('--')) and (";" not in line)]
 
-with open(".metwork-framework/README.md") as f:
+with open("README.md") as f:
     long_description = f.read()
 
 setup(
     author="Fabien MARTY",
     author_email="fabien.marty@gmail.com",
     name="jinja2_shell_extension",
-    version="0.0.6",
+    version="1.0.0",
     license="BSD",
     packages=find_packages(),
     install_requires=install_requires,
