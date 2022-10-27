@@ -1,5 +1,4 @@
 import subprocess
-import jinja2
 from jinja2.ext import Extension
 
 
@@ -7,6 +6,7 @@ try:
     from jinja2 import pass_eval_context as eval_context
 except ImportError:
     from jinja2 import evalcontextfilter as eval_context
+
 
 @eval_context
 def shell(eval_ctx, value, die_on_error=False, encoding="utf8"):
