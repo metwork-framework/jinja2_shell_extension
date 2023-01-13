@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [Unreleased]
+
+### New Features
+
+- support kwargs
+
 ## v1.0.0 (2022-10-27)
 
 - No interesting change
