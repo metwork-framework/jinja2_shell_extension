@@ -4,9 +4,7 @@
 
 **Status (master branch)**
 
-
-
-[![GitHub CI](https://github.com/metwork-framework/jinja2_shell_extension/workflows/CI/badge.svg?branch=master)](https://github.com/metwork-framework/jinja2_shell_extension/actions?query=workflow%3ACI+branch%3Amaster)
+[![GitHub CI](https://github.com/metwork-framework/jinja2_shell_extension/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/metwork-framework/jinja2_shell_extension/actions?query=workflow%3ACI+branch%3Amaster)
 [![Maintenance](https://raw.githubusercontent.com/metwork-framework/resources/master/badges/maintained.svg)](https://github.com/metwork-framework/resources/blob/master/badges/maintained.svg)
 
 
@@ -34,7 +32,7 @@ from jinja2 import Template, Environment
 env = Environment(extensions=["jinja2_shell_extension.ShellExtension"])
 
 # For the example, we use a template from a simple string
-template = env.from_string("Mon, 27 Nov 2023 09:27:39 +0000
+template = env.from_string("Fri, 01 Dec 2023 13:27:59 +0000
 ")
 result = template.render()
 
