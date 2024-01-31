@@ -32,7 +32,7 @@ from jinja2 import Template, Environment
 env = Environment(extensions=["jinja2_shell_extension.ShellExtension"])
 
 # For the example, we use a template from a simple string
-template = env.from_string("Fri, 01 Dec 2023 13:27:59 +0000
+template = env.from_string("Wed, 31 Jan 2024 23:49:38 +0000
 ")
 result = template.render()
 
