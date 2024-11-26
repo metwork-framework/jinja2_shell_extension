@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v2.1.0 (2024-11-25)
+
+### Bug Fixes
+
+- Windows compatibility 
+
 ## v2.0.1 (2023-07-19)
 
 - No interesting change
