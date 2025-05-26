@@ -12,7 +12,7 @@ setup(
     author="Fabien MARTY",
     author_email="fabien.marty@gmail.com",
     name="jinja2_shell_extension",
-    version="2.1.0",
+    version="2.0.2",
     license="BSD",
     packages=find_packages(),
     install_requires=install_requires,
@@ -25,7 +25,6 @@ setup(
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3"
     ]
 )
