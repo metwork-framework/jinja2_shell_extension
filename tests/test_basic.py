@@ -13,6 +13,7 @@ def test_extension1():
     result = template.render()
     assert len(result) >= 6
 
+
 def test_input():
     env = Environment(extensions=["jinja2_shell_extension.ShellExtension"])
     template = env.from_string("{{ 'cat' | shell(input='meow', text=true) }}")
