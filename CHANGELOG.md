@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.1.1 (2025-05-26)
+
+- No interesting change
+
 ## v2.1.0 (2024-11-25)
 
 ### Bug Fixes
